@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+:root {
+  --primary-green: hsl(163, 72%, 41%);
+  --primary-red: hsl(356, 69%, 56%);
+  --facebook-color: hsl(208, 92%, 53%);
+  --twitter-color: hsl(203, 89%, 53%);
+  --instagram-gradient: linear-gradient(hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube-color: hsl(348, 97%, 39%);
+  --dark-toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+  --light-toggle: hsl(230, 22%, 74%);
+  --dark-blue-background: hsl(230, 17%, 14%);
+  --dark-blue: hsl(232, 19%, 15%);
+  --dark-desat-blue: hsl(228, 28%, 20%);
+  --desat-blue: hsl(228, 34%, 66%);
+  --white-color: #fff;
+  --pale-blue: hsl(225, 100%, 98%);
+  --light-gray-blue: hsl(227, 47%, 96%);
+  --dark-gray-blue: hsl(228, 12%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  font-weight: 400;
+  color: var(--white-color);
+  background-color: var(--dark-blue-background);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  background-color: var(--dark-blue);
+}
+
+.header__text {
+  border-bottom: 1px solid var(--dark-desat-blue);
+}
+
+.header__text h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.51rem;
+}
+
+.header__text h3 {
+  font-size: 14px;
+  color: var(--desat-blue);
+  margin-bottom: 1.5rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--dark-desat-blue);
+  width: 100%;
+  padding: 1.5rem 2rem;
+  margin-top: 1rem;
+  border-radius: 0.4em;
+}
+
+.facebook__card {
+  border-top: 5px solid var(--facebook-color);
+}
+.twitter__card {
+  border-top: 5px solid var(--twitter-color);
+}
+.instagram__card {
+  border-top: 5px solid hsl(37, 97%, 70%);
+}
+.youtube__card {
+  border-top: 5px solid var(--youtube-color);
+  margin-bottom: 4rem;
+}
+
+.overview__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.icon__header h3 {
+  color: var(--desat-blue);
+  font-size: 0.75rem;
+  margin-left: 10px;
+}
+
+.count__number {
+  text-align: center;
+}
+
+.card > h1 {
+  font-size: 4em;
+}
+
+.count__unit {
+  color: var(--desat-blue);
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 0.75rem;
+  letter-spacing: 5px;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.current__count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.current__count img {
+  margin-bottom: 0.5rem;
+}
+
+.count__today {
+  margin-left: 0.5rem;
+  color: var(--primary-red);
+}
+
+.overview__title {
+  margin-bottom: 1rem;
+}
+
+.overview__cards {
+  display: grid;
+}
+
+.overview__card {
+  background-color: var(--dark-desat-blue);
+  padding: 2rem;
+  width: 100%;
+  margin-top: 1rem;
+  border-radius: 0.5em;
+}
+
+.facebook__view,
+.facebook__likes,
+.insta__likes,
+.insta__views,
+.twitter__retweets,
+.twitter__likes,
+.youtube__likes,
+.youtube__views {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+img {
+  max-width: 100%;
+  align-self: flex-end;
+}
+
+.overview__percent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.col .icon,
+.overview__card .col:first-of-type h4 {
+  margin-bottom: 1rem;
+}
+
+.percent {
+  margin: 0;
+  color: var(--primary-red);
+}
+
+.green {
+  color: var(--primary-green);
+}
+
+.overview__percent img {
+  margin-bottom: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 700px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .row {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cards {
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+  }
+
+  .card {
+    margin-bottom: 0;
+  }
+
+  .card + .card {
+    margin-left: 20px;
+  }
+}

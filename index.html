@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | [Challenge Name Here]</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <!-- <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style> -->
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__title">
+          <div class="header__text">
+            <h1>Social Media Dashboard</h1>
+            <h3>Total Followers: 23,004</h3>
+          </div>
+        </div>
+      </header>
+      <!--  -->
+      <div class="cards">
+        <div class="card facebook__card">
+          <div class="icon__header">
+            <img
+              src="./images/icon-facebook.svg"
+              alt=""
+              class="facebook__icon"
+            />
+            <h3 class="icon__header--text">@nathanf</h3>
+          </div>
+          <h1 class="count__number">1987</h1>
+          <div class="count__unit">Followers</div>
+          <div class="current__count">
+            <img src="./images/icon-up.svg" alt="" />
+            <h4 class="count__today green">12 Today</h4>
+          </div>
+        </div>
+        <div class="card twitter__card">
+          <div class="icon__header">
+            <img src="./images/icon-twitter.svg" alt="" class="twitter__icon" />
+            <h3 class="icon__header--text">@nathanf</h3>
+          </div>
+          <h1 class="count__number">1044</h1>
+          <div class="count__unit">Followers</div>
+          <div class="current__count">
+            <img src="./images/icon-up.svg" alt="" />
+            <h4 class="count__today green">99 Today</h4>
+          </div>
+        </div>
+        <div class="card instagram__card">
+          <div class="icon__header">
+            <img
+              src="./images/icon-instagram.svg"
+              alt=""
+              class="twitter__icon"
+            />
+            <h3 class="icon__header--text">@realnathanf</h3>
+          </div>
+          <h1 class="count__number">11k</h1>
+          <div class="count__unit">Followers</div>
+          <div class="current__count">
+            <img src="./images/icon-up.svg" alt="" />
+            <h4 class="count__today green">1099 Today</h4>
+          </div>
+        </div>
+        <div class="card youtube__card">
+          <div class="icon__header">
+            <img src="./images/icon-youtube.svg" alt="" class="twitter__icon" />
+            <h3 class="icon__header--text">Nathan F.</h3>
+          </div>
+          <h1 class="count__number">8239</h1>
+          <div class="count__unit">Subscribers</div>
+          <div class="current__count">
+            <img src="./images/icon-down.svg" alt="" />
+            <h4 class="count__today">144 Today</h4>
+          </div>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <h2 class="overview__title">Overview - Today</h2>
+      <!--  -->
+      <div class="overview__cards row">
+        <div class="overview__card facebook__view">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Page Views
+            </h4>
+            <h1 class="overview__count">
+              87
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-facebook.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-up.svg" alt="" />
+              <h4 class="percent green">3%</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="overview__card facebook__likes">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Likes
+            </h4>
+            <h1 class="overview__count">
+              52
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-facebook.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-down.svg" alt="" />
+              <h4 class="percent">2%</h4>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+
+        <div class="overview__card insta__likes">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Likes
+            </h4>
+            <h1 class="overview__count">
+              5462
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-instagram.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-up.svg" alt="" />
+              <h4 class="percent green">2275%</h4>
+            </div>
+          </div>
+        </div>
+
+        <!--  -->
+        <div class="overview__card insta__views">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Profile Views
+            </h4>
+            <h1 class="overview__count">
+              52k
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-instagram.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-up.svg" alt="" />
+              <h4 class="percent green">1375%</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="overview__card twitter__retweets">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Retweets
+            </h4>
+            <h1 class="overview__count">
+              117
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-twitter.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-up.svg" alt="" />
+              <h4 class="percent green">303%</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="overview__card twitter__likes">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Likes
+            </h4>
+            <h1 class="overview__count">
+              507
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-twitter.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-up.svg" alt="" />
+              <h4 class="percent green">553%</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="overview__card youtube__likes">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Likes
+            </h4>
+            <h1 class="overview__count">
+              107
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-youtube.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-down.svg" alt="" />
+              <h4 class="percent">19%</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="overview__card youtube__views">
+          <div class="col">
+            <h4 class="overview__count--title">
+              Total Views
+            </h4>
+            <h1 class="overview__count">
+              1407
+            </h1>
+          </div>
+          <div class="col">
+            <img src="./images/icon-youtube.svg" class="icon" alt="" />
+            <div class="overview__percent">
+              <img src="./images/icon-down.svg" alt="" />
+              <h4 class="percent">12%</h4>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
